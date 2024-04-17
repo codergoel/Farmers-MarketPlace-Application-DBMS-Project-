@@ -18,10 +18,10 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
 Farmers Marketplace Application
-Overview
+# Overview
 The Farmers Marketplace Application is designed to connect farmers directly with consumers, facilitating the sale and purchase of agricultural products through a digital platform. This project is created by Group 13, aimed at enhancing direct market access for farmers, improving the efficiency of agricultural sales, and providing consumers with access to fresh produce.
 
-Features
+# Features
 Online Marketplace: Farmers can list their products, and buyers can purchase them directly.
 User Onboarding Panels: Separate onboarding processes for farmers and buyers to register and manage their profiles.
 Product Panels: Display available products in a card format with options to buy and specify quantities.
@@ -33,10 +33,11 @@ Frontend: Java Swing for the graphical user interface.
 Backend: Java with JDBC for database interaction.
 Database: MySQL for storing all application data.
 Setup and Installation
-Prerequisites
-Java JDK 11 or newer.
-MySQL Server 8.0 or newer.
-An IDE like IntelliJ IDEA or Eclipse for Java development (optional but recommended).
+
+# Prerequisites
+`Java JDK 11 or newer`.
+`MySQL Server 8.0` or newer.
+An IDE like `IntelliJ` `IDEA` or `Eclipse` for Java development (optional but recommended).
 Database Configuration
 Create Database:
 sql
@@ -83,8 +84,8 @@ The system assumes a simple security model; consider enhancing authentication an
 Contributing
 Contributions to the Farmers Marketplace Application are welcome! Please fork the repository, make your changes, and submit a pull request.
 
-License
+# License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-Contact Information
+# Contact Information
 For support or queries, reach out to us via email at support@farmersmarketplace.com.

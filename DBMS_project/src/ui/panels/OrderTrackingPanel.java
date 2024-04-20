@@ -9,7 +9,7 @@ public class OrderTrackingPanel extends JPanel {
     private ProductTrackingDAO trackingDAO = new ProductTrackingDAO();
 
     // Constructor now accepts an orderId parameter
-    public OrderTrackingPanel(JFrame mainFrame, int orderId) {
+    public OrderTrackingPanel(JFrame mainFrame, int orderId, int productId) {
         setLayout(new GridLayout(0, 1));  // Use GridLayout for vertical arrangement
 
         // Fetch the latest tracking information using the provided orderId
@@ -34,7 +34,7 @@ public class OrderTrackingPanel extends JPanel {
         // Add a review button that redirects to the ReviewPanel
         JButton reviewButton = new JButton("Add a Review");
         reviewButton.addActionListener(e -> {
-            mainFrame.setContentPane(new ReviewPanel(mainFrame, orderId));  // Assume ReviewPanel accepts JFrame and orderId
+            mainFrame.setContentPane(new ReviewPanel(mainFrame, productId));  // Assume ReviewPanel accepts JFrame and orderId
             mainFrame.validate();
         });
         add(reviewButton);

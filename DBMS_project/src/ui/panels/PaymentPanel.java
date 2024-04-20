@@ -25,12 +25,12 @@ public class PaymentPanel extends JPanel {
         payButton.addActionListener(e -> {
             // Updated to use the passed orderId
             Payment payment = new Payment(0, orderId, new Date(), amount, "Success", "Online");
-            ProductTracking tracking = new ProductTracking(0, orderId, "To be shipped", new Date(), null);
+            ProductTracking tracking = new ProductTracking(0, orderId, "To be shipped", "Tomorrow", null);
             trackingDAO.addProductTracking(tracking);
             if (paymentDAO.createPayment(payment)) {
                 JOptionPane.showMessageDialog(this, "Payment successful!");
                 // Pass orderId to the OrderTrackingPanel
-                mainFrame.setContentPane(new OrderTrackingPanel(mainFrame, orderId));
+                mainFrame.setContentPane(new OrderTrackingPanel(mainFrame, orderId, product.getPId()));
             } else {
                 JOptionPane.showMessageDialog(this, "Payment failed.");
             }

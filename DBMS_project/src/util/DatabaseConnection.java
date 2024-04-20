@@ -9,10 +9,10 @@ import java.sql.SQLException;
  */
 public class DatabaseConnection {
     // Database URL
-    private static final String URL = "jdbc:mysql://localhost:3306/farmers_market?useSSL=false&allowPublicKeyRetrieval=true"; // Adjust the database name as necessary
+    private static final String URL = "jdbc:mysql://localhost:3306/farmers?useSSL=false&allowPublicKeyRetrieval=true"; // Adjust the database name as necessary
     // Database credentials
-    private static final String USER = "root"; // Use your database username
-    private static final String PASSWORD = "TanmayGOEL@1306"; // Use your database password
+    private static final String USER = "farmers"; // Use your database username
+    private static final String PASSWORD = "farmers"; // Use your database password
 
     // Load the JDBC driver
     static {

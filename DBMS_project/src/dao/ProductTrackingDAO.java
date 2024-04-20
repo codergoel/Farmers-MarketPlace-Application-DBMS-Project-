@@ -37,8 +37,8 @@ public class ProductTrackingDAO {
                     rs.getInt("tracking_id"),
                     rs.getInt("order_id"),
                     rs.getString("tracking_status"),
-                    rs.getDate("estimated_delivery_date"),
-                    rs.getDate("actual_delivery_date")
+                    rs.getString("estimated_delivery_date"),
+                    rs.getString("actual_delivery_date")
                 );
             }
         } catch (SQLException e) {

@@ -6,10 +6,10 @@ public class ProductTracking {
     private int trackingId;
     private int orderId;
     private String trackingStatus;
-    private Date estimatedDeliveryDate;
-    private Date actualDeliveryDate;
+    private String estimatedDeliveryDate;
+    private String actualDeliveryDate;
 
-    public ProductTracking(int trackingId, int orderId, String trackingStatus, Date estimatedDeliveryDate, Date actualDeliveryDate) {
+    public ProductTracking(int trackingId, int orderId, String trackingStatus, String estimatedDeliveryDate, String actualDeliveryDate) {
         this.trackingId = trackingId;
         this.orderId = orderId;
         this.trackingStatus = trackingStatus;
@@ -42,19 +42,19 @@ public class ProductTracking {
         this.trackingStatus = trackingStatus;
     }
 
-    public Date getEstimatedDeliveryDate() {
+    public String getEstimatedDeliveryDate() {
         return estimatedDeliveryDate;
     }
 
-    public void setEstimatedDeliveryDate(Date estimatedDeliveryDate) {
+    public void setEstimatedDeliveryDate(String estimatedDeliveryDate) {
         this.estimatedDeliveryDate = estimatedDeliveryDate;
     }
 
-    public Date getActualDeliveryDate() {
+    public String getActualDeliveryDate() {
         return actualDeliveryDate;
     }
 
-    public void setActualDeliveryDate(Date actualDeliveryDate) {
+    public void setActualDeliveryDate(String actualDeliveryDate) {
         this.actualDeliveryDate = actualDeliveryDate;
     }
 }
